@@ -1,0 +1,13 @@
+QuantoniumTechnologies
+{
+	NameKey = "EditorGroups/QuantoniumTechnologies"
+	Icon
+	{
+		Texture
+		{
+			File = "QuantoniumTechnologies.EditorLogo.png"
+			MipLevels = 2
+			SampleMode = Linear
+		}
+	}
+}

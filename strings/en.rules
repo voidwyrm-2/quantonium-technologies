@@ -1,0 +1,27 @@
+Parts
+{
+	QuantumStorageUnit5 = "Quantum Storage Unit 5"
+	QuantumStorageUnit5Icon = "QSU-5"
+	QuantumStorageUnit5Desc	= "5 normal storage slots entangled with each other in one tile."
+
+	TinyQuantumCrewQuarters = "Tiny Quantum Crew's Bunk"
+	TinyQuantumCrewQuartersIcon = "QBunk - Tiny"
+	TinyQuantumCrewQuartersDesc = "Provides beds for seven crew in one tile."
+
+	QuantumReactor = "Quantum Reactor"
+	QuantumReactorIcon = "QReactor"
+	QuantumReactorDesc = "A reactor."
+
+	QuantumBeamPrism = "Quantum Beam Prism"
+	QuantumBeamPrismIcon = "QPrism"
+	QuantumBeamPrismDesc = "An ion beam prism that uses hyperium quantonics to sustain any energy put into it."
+
+	//QuantumAmmoFactory = "Quantum Ammo Factory"
+	//QuantumAmmoFactoryIcon = "QAF"
+	//QuantumAmmoFactoryDesc = "A fast and small factory for creating ammo.\nThe ammo storage, sulfur storage and ammo factory are entangled with each other"
+}
+
+EditorGroups
+{
+	QuantoniumTechnologies = "Quantonium Technologies"
+}

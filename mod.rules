@@ -1,0 +1,37 @@
+ID = "nc.quantonium_technologies"
+Name = "Quantonium Technologies"
+Version = 1.1.0
+CompatibleGameVersions = ["0.27.1"]
+ModifiesMultiplayer = true
+StringsFolder = "strings"
+Author = "Nuclear Pasta"
+Description = "According to all known laws of physics, there is no way a single storage slot should be able to hold more than 20 steel."
+
+Actions
+[
+    {
+		Action = AddMany
+		AddTo = "<ships/terran/terran.rules>/Terran/Parts"
+		ManyToAdd = 
+		[
+	    	&<tiny_quantum_crew_quarters/tiny_quantum_crew_quarters.rules>/Part
+			&<quantum_storage_unit_5/quantum_storage_unit_5.rules>/Part
+			&<quantum_reactor/quantum_reactor.rules>/Part
+			&<quantum_beam_prism/quantum_beam_prism.rules>/Part
+		]
+	}
+
+	{
+    	Action = Add
+    	AddTo = "<./Data/gui/game/designer/editor_groups.rules>"
+    	Name = "QuantoniumTechnologies"
+    	ToAdd
+    	{
+       		NameKey = "EditorGroups/QuantoniumTechnologies"
+            Icon
+			{
+				Texture = "Gui/QuantoniumTechnologies.EditorLogo.png"
+			}
+		}
+	}
+]

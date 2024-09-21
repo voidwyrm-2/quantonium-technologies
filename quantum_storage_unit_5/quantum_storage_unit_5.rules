@@ -1,0 +1,162 @@
+Part : <./Data/ships/terran/base_part_terran.rules>/Part
+{
+	NameKey = "Parts/QuantumStorageUnit5"
+	IconNameKey = "Parts/QuantumStorageUnit5Icon"
+	ID = nc.quantum_storage_unit_5 // Part IDs must always be in the form of "author_name.part_name". If making your own mod, do *not* use "cosmoteer" as your author name, because it may conflict with future vanilla parts.
+	OtherIDs = []
+	EditorGroup = "QuantoniumTechnologies"
+	DescriptionKey = "Parts/QuantumStorageUnit5Desc"
+	JobsNameKey = "Parts/StorageGeneric"
+	Resources
+	[
+		[steel, 40]
+		[hyperium, 3]
+	]
+	Size = [1, 1]
+	SelectionTypeID = "storage"
+	MaxHealth = 2000
+	ReceivableBuffs : ^/0/ReceivableBuffs []
+	CrewSpeedFactor = 1.5
+	CrewCongestedSpeedFactor = 1
+	IsRotateable = false
+	IgnoreRotationForMirroredSelection = true
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon.png"
+			SampleMode = Linear
+		}
+		Size = [32, 32]
+	}
+	Components : ^/0/Components
+	{
+		Storage0
+		{
+			Type = FlexResourceGrid
+			GridRect = [0, 0, 1, 1]
+			Layer = "doodads_low"
+			SpriteInset = 8/64
+			RandomSpriteRotation = true
+			AllowExternalPickupAndDelivery = true
+		}
+		Storage1
+		{
+			Type = FlexResourceGrid
+			GridRect = [0, 0, 1, 1]
+			Layer = "doodads_low"
+			SpriteInset = 8/64
+			RandomSpriteRotation = true
+			AllowExternalPickupAndDelivery = true
+		}
+		Storage2
+		{
+			Type = FlexResourceGrid
+			GridRect = [0, 0, 1, 1]
+			Layer = "doodads_low"
+			SpriteInset = 8/64
+			RandomSpriteRotation = true
+			AllowExternalPickupAndDelivery = true
+		}
+		Storage3
+		{
+			Type = FlexResourceGrid
+			GridRect = [0, 0, 1, 1]
+			Layer = "doodads_low"
+			SpriteInset = 8/64
+			RandomSpriteRotation = true
+			AllowExternalPickupAndDelivery = true
+		}
+		Storage4
+		{
+			Type = FlexResourceGrid
+			GridRect = [0, 0, 1, 1]
+			Layer = "doodads_low"
+			SpriteInset = 8/64
+			RandomSpriteRotation = true
+			AllowExternalPickupAndDelivery = true
+		}
+
+		Graphics
+		{
+			Type = Graphics
+			Location = [.5, .5]
+			Floor
+			{
+				Layer = "floors"
+				DamageLevels
+				[
+					{
+						File = "floor.png"
+						Size = [1, 1]
+					}
+					{
+						File = "floor.png"
+						Size = [1, 1]
+					}
+					{
+						File = "floor.png"
+						Size = [1, 1]
+					}
+				]
+			}
+
+			Roof
+			{
+				Layer = "roofs"
+				DamageLevels
+				[
+					{
+						File = "roof.png"
+						//NormalsFile = "roof_normals.png"
+						Size = [1, 1]
+					}
+					{
+						File = "roof_33.png"
+						//NormalsFile = "roof_normals_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "roof_66.png"
+						//NormalsFile = "roof_normals_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
+
+			Walls
+			{
+				Layer = "walls"
+				DamageLevels
+				[
+					{
+						File = "walls.png"
+						Size = [1, 1]
+					}
+					{
+						File = "walls.png"
+						Size = [1, 1]
+					}
+					{
+						File = "walls.png"
+						Size = [1, 1]
+					}
+				]
+			}
+		}
+
+		DestroyedEffects
+		{
+			Type = DeathEffects
+			MediaEffects = &/COMMON_EFFECTS/SmallPartDestroyedDry
+			Location = [.5, .5]
+		}
+
+		Blueprints
+		{
+			Type = BlueprintSprite
+			File = "blueprints.png"
+			Size = [1, 1]
+		}
+	}
+}
